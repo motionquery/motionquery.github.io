@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        th {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Motion Transfer Results</h1>
+    <table>
+        <tr>
+            <th>Table of Contents</th>
+        </tr>
+        <tr>
+            <td><a href="#fig_qual" >Qualitative Results Presented in the Paper</a></td>
+        </tr>
+        <tr>
+            <td><a href="#fig_compare" >Comparisons Presented in the Paper</a></td>
+        </tr>
+        <tr>
+            <td><a href="#fig_compare_more" >Additional Comparisons with Motion Inversion</a></td>
+        </tr>
+        <tr>
+            <td><a href="#fig_more_qual" >More Qualitative Results</a></td>
+        </tr>
+    </table>
+    
+    <table width="1200" align="center">
+        <tbody>
+            <tr><th colspan="4" class="section-title"><h1 id="fig_qual" align="left"><a name="fig_qual"></a>Qualitative Results</h1>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A rabbit in a field, low poly, orbit shot</th>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A lion sitting on top of a cliff</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/source.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/a_rabbit_in_a_field_low_poly_orbit_shot.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/source_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/a_lion_sitting_on_top_of_a_cliff.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A cartoon of a dancing sloth</th>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A penguin is sliding on an icy slope</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/source_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/a_cartoon_of_a_dancing_sloth.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/source_3.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/a_penguin_is_sliding_on_an_icy_slope.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A robot walking in a puddle</th>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A ship sailing on the sea</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/source_4.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/a_robot_walking_in_a_puddle.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/source_5.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_qual/a_ship_sailing_on_the_sea.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-title"><h1 id="fig_compare" align="left"><a name="fig_compare"></a>Comparisons</h1>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">Motion Inversion</th>
+                <th style="font-family: Arial;">DMT</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/source.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/ours.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">Two monkeys playing with coconuts</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/motion_inversion.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/dmt.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">Motion Inversion</th>
+                <th style="font-family: Arial;">DMT</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/source_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/ours_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A train riding on rails in autumn view</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/motion_inversion_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/dmt_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">Motion Inversion</th>
+                <th style="font-family: Arial;">DMT</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/source_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/ours_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A boy walking in a field</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/motion_inversion_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/dmt_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">Motion Inversion</th>
+                <th style="font-family: Arial;">DMT</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/source_3.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/ours_3.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A fox sitting in a snowy mountain</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/motion_inversion_3.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare/dmt_3.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-title"><h1 id="fig_compare_more" align="left"><a name="fig_compare_more"></a>Additional Comparisons</h1>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">Motion Inversion</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/source.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/ours.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A Roman soldier standing in front of the Colosseum</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/motion_inversion.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">Motion Inversion</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/source_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/ours_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">Microchip (Custom Shot)</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/motion_inversion_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">Ours</th>
+                <th style="font-family: Chalkduster">Motion Inversion</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/source_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/ours_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/motion_inversion_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">Motion Inversion</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/source_3.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/ours_3.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A turtle plods in the sea</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/motion_inversion_3.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">Motion Inversion</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/source_4.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/ours_4.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A penguin is sliding on an icy slope</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/motion_inversion_4.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">Motion Inversion</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/source_5.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/ours_5.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A rabbit in a field, low poly, orbit shot</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_compare_more/motion_inversion_5.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-title"><h1 id="fig_more_qual" align="left"><a name="fig_more_qual"></a>More Results</h1>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A  pirate ship sailing in a river</th>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">Dining room captured with a pan right</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/source.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/a__pirate_ship_sailing_in_a_river.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/source_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/dining_room_captured_with_a_pan_right.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A Roman soldier standing in front of the Colosseum</th>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A fish swimming in the lake</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/source_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/a_roman_soldier_standing_in_front_of_the_colosseum.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/source_3.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/a_fish_swimming_in_the_lake.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">Sea ice during sunset (Crane up shot)</th>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A motorbike driving in a forest</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/source_4.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/sea_ice_during_sunset_crane_up_shot.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/source_5.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/a_motorbike_driving_in_a_forest.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A goose walking in a puddle</th>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">A cartoon of a dancing frog</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/source_6.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/a_goose_walking_in_a_puddle.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/source_7.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/a_cartoon_of_a_dancing_frog.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Chalkduster">Forest captured with a tilt up.</th>
+                <th style="font-family: Chalkduster">Mars captured with a tilt up</th>
+                <th style="font-family: Chalkduster">Snowy field captured with a tilt up</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/source_8.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/forest_captured_with_a_tilt_up.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/mars_captured_with_a_tilt_up.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fig_more_qual/snowy_field_captured_with_a_tilt_up.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+        </tbody>
+    </table>
+</body>
+</html>
