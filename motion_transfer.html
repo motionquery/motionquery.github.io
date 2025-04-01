@@ -58,16 +58,28 @@
             <td style="padding-left: 20px"><a href="#fast_sampling">Fast (8 Steps) Sampling with T2V-Turbo-V2</a></td>
         </tr>
         <tr>
+            <td style="padding-left: 40px"><a href="#fast_sampling_ours">Q-Injection with T2V-Turbo-V2</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 40px"><a href="#fast_sampling_basemodel">Base Model T2V-Turbo-V2 (No Q Injection)</a></td>
+        </tr>
+        <tr>
             <td style="padding-left: 20px"><a href="#stronger_models">Recent Stronger Models</a></td>
         </tr>
         <tr>
-            <td style="padding-left: 40px"><a href="#ltx">LTX-Video (HaCohen et al., 2024)</a></td>
+            <td style="padding-left: 40px"><a href="#ltx">Q-Injection with LTX-Video (HaCohen et al., 2024)</a></td>
         </tr>
         <tr>
-            <td style="padding-left: 40px"><a href="#wan">WAN 2.1 (Wang, 2025)</a></td>
+            <td style="padding-left: 40px"><a href="#ltx_basemodel">LTX-Video Base Model (No Q Injection)</a></td>
         </tr>
         <tr>
-            <td style="padding-left: 20px"><a href="#camcoder">More Realistic Tone, Using "camcoder" Prompt Prefix</a></td>
+            <td style="padding-left: 40px"><a href="#wan">Q-Injection with WAN 2.1 (Wang, 2025)</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 40px"><a href="#wan_basemodel">WAN 2.1 Base Model (No Q Injection)</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 20px"><a href="#camcorder">More Realistic Tone, Using "camcorder" Prompt Prefix</a></td>
         </tr>
         <tr>
             <td style="padding-left: 20px"><a href="#cartoonish_vanilla">Cartoonish Style is Prompt-Dependent, Not Injection-Related</a></td>
@@ -96,7 +108,11 @@
         <tbody>
             <tr><th colspan="4" class="section-h1"><h1 id="rebuttal" align="left"><a name="rebuttal"></a>Rebuttal Results</h1>
 </th></tr>
+            <tr><th colspan="4" class="section-h2"><h2 id="note1" align="left"><a name="note1"></a><span style='background-color: #ffe5b4;'>Note: Videos are automatically synchronized for comparison. If synchronization appears off, please refresh the page</span></h2>
+</th></tr>
             <tr><th colspan="4" class="section-h2"><h2 id="fast_sampling" align="left"><a name="fast_sampling"></a>Fast (8 Steps) Sampling with T2V-Turbo-V2</h2>
+</th></tr>
+            <tr><th colspan="4" class="section-h3"><h3 id="fast_sampling_ours" align="left"><a name="fast_sampling_ours"></a>Q-Injection with T2V-Turbo-V2</h3>
 </th></tr>
             <tr>
                 <th style="font-family: 'Segoe Print', sans-serif;">Source (young Appenzeller Sennenhund)</th>
@@ -106,21 +122,52 @@
             <tr>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/fast_sampling/source_young_appenzeller_sennenhund.mp4" 
+                        <video width="384" src="results_motion/fast_sampling_ours/source_young_appenzeller_sennenhund.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
                     </div>
                 </th>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/fast_sampling/a_dog_running_on_top_of_a_cloud.mp4" 
+                        <video width="384" src="results_motion/fast_sampling_ours/a_dog_running_on_top_of_a_cloud.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
                     </div>
                 </th>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/fast_sampling/a_pig_running_on_top_of_a_cloud.mp4" 
+                        <video width="384" src="results_motion/fast_sampling_ours/a_pig_running_on_top_of_a_cloud.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-h3"><h3 id="fast_sampling_basemodel" align="left"><a name="fast_sampling_basemodel"></a>Base Model T2V-Turbo-V2 (No Q Injection)</h3>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source (young Appenzeller Sennenhund)</th>
+                <th style="font-family: Chalkduster">A dog running on top of a cloud</th>
+                <th style="font-family: Chalkduster">A pig running on top of a cloud</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fast_sampling_basemodel/source_young_appenzeller_sennenhund.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fast_sampling_basemodel/a_dog_running_on_top_of_a_cloud.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fast_sampling_basemodel/a_pig_running_on_top_of_a_cloud.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
                     </div>
@@ -129,7 +176,7 @@
             <tr></tr>
             <tr><th colspan="4" class="section-h2"><h2 id="stronger_models" align="left"><a name="stronger_models"></a>Recent Stronger Models</h2>
 </th></tr>
-            <tr><th colspan="4" class="section-h3"><h3 id="ltx" align="left"><a name="ltx"></a>LTX-Video (HaCohen et al., 2024)</h3>
+            <tr><th colspan="4" class="section-h3"><h3 id="ltx" align="left"><a name="ltx"></a>Q-Injection with LTX-Video (HaCohen et al., 2024)</h3>
 </th></tr>
             <tr>
                 <th style="font-family: 'Segoe Print', sans-serif;">Source (Golden retriever)</th>
@@ -160,7 +207,38 @@
                 </th>
             </tr>
             <tr></tr>
-            <tr><th colspan="4" class="section-h3"><h3 id="wan" align="left"><a name="wan"></a>WAN 2.1 (Wang, 2025)</h3>
+            <tr><th colspan="4" class="section-h3"><h3 id="ltx_basemodel" align="left"><a name="ltx_basemodel"></a>LTX-Video Base Model (No Q Injection)</h3>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source (Golden retriever)</th>
+                <th style="font-family: Chalkduster">A dog trotting across a muddy farm</th>
+                <th style="font-family: Chalkduster">A pig trotting across a muddy farm</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/ltx_basemodel/source_golden_retriever.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/ltx_basemodel/a_dog_trotting_across_a_muddy_farm.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/ltx_basemodel/a_pig_trotting_across_a_muddy_farm.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-h3"><h3 id="wan" align="left"><a name="wan"></a>Q-Injection with WAN 2.1 (Wang, 2025)</h3>
 </th></tr>
             <tr>
                 <th style="font-family: 'Segoe Print', sans-serif;">Source (dog with white dots)</th>
@@ -191,31 +269,62 @@
                 </th>
             </tr>
             <tr></tr>
-            <tr><th colspan="4" class="section-h2"><h2 id="camcoder" align="left"><a name="camcoder"></a>More Realistic Tone, Using "camcoder" Prompt Prefix</h2>
+            <tr><th colspan="4" class="section-h3"><h3 id="wan_basemodel" align="left"><a name="wan_basemodel"></a>WAN 2.1 Base Model (No Q Injection)</h3>
 </th></tr>
             <tr>
-                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
-                <th style="font-family: Arial;">In main results</th>
-                <th style="font-family: Arial;">With "camcoder" prefix</th>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source (dog with white dots)</th>
+                <th style="font-family: Chalkduster">A dog walking on the snow</th>
+                <th style="font-family: Chalkduster">A pig walking on the snow</th>
             </tr>
             <tr>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/camcoder/source.mp4" 
+                        <video width="384" src="results_motion/wan_basemodel/source_dog_with_white_dots.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
                     </div>
                 </th>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/camcoder/in_main_results.mp4" 
+                        <video width="384" src="results_motion/wan_basemodel/a_dog_walking_on_the_snow.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/wan_basemodel/a_pig_walking_on_the_snow.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-h2"><h2 id="camcorder" align="left"><a name="camcorder"></a>More Realistic Tone, Using "camcorder" Prompt Prefix</h2>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">In main results</th>
+                <th style="font-family: Arial;">With "camcorder" prefix</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcorder/source.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcorder/in_main_results.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">Two monkeys playing with coconuts</span></div>
                     </div>
                 </th>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/camcoder/with_camcoder_prefix.mp4" 
+                        <video width="384" src="results_motion/camcorder/with_camcorder_prefix.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
                     </div>
@@ -225,26 +334,26 @@
             <tr>
                 <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
                 <th style="font-family: Arial;">In main results</th>
-                <th style="font-family: Arial;">With "camcoder" prefix</th>
+                <th style="font-family: Arial;">With "camcorder" prefix</th>
             </tr>
             <tr>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/camcoder/source_1.mp4" 
+                        <video width="384" src="results_motion/camcorder/source_1.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
                     </div>
                 </th>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/camcoder/in_main_results_1.mp4" 
+                        <video width="384" src="results_motion/camcorder/in_main_results_1.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A goose walking in a puddle</span></div>
                     </div>
                 </th>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/camcoder/with_camcoder_prefix_1.mp4" 
+                        <video width="384" src="results_motion/camcorder/with_camcorder_prefix_1.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
                     </div>
@@ -254,26 +363,26 @@
             <tr>
                 <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
                 <th style="font-family: Arial;">In main results</th>
-                <th style="font-family: Arial;">With "camcoder" prefix</th>
+                <th style="font-family: Arial;">With "camcorder" prefix</th>
             </tr>
             <tr>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/camcoder/source_2.mp4" 
+                        <video width="384" src="results_motion/camcorder/source_2.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
                     </div>
                 </th>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/camcoder/in_main_results_2.mp4" 
+                        <video width="384" src="results_motion/camcorder/in_main_results_2.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A motorbike driving in a forest</span></div>
                     </div>
                 </th>
                 <th style="vertical-align: top">
                     <div style="display: flex; flex-direction: column; align-items: center">
-                        <video width="384" src="results_motion/camcoder/with_camcoder_prefix_2.mp4" 
+                        <video width="384" src="results_motion/camcorder/with_camcorder_prefix_2.mp4" 
                                autoplay loop controls muted></video>
                         <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
                     </div>
