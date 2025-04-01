@@ -10,31 +10,378 @@
             padding: 10px;
             text-align: center;
         }
+        .subsection-title {
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-align: left;
+            color: #333;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-top: 30px;
+        }
+        .section-h1 {
+            font-size: 2em;
+            margin-top: 40px;
+            text-align: left;
+        }
+        .section-h2 {
+            font-size: 1.5em;
+            margin-top: 25px;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .section-h3 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-align: left;
+            padding-left: 40px;
+        }
+        .section-h4 {
+            font-size: 1em;
+            margin-top: 15px;
+            text-align: left;
+            padding-left: 60px;
+        }
     </style>
 </head>
 <body>
     <h1 style="text-align: center;">Motion Transfer Results</h1>
     <table>
         <tr>
-            <th>Table of Contents</th>
+            <th style="font-size: 1.5em;">Table of Contents</th>
         </tr>
         <tr>
-            <td><a href="#fig_qual" >Qualitative Results Presented in the Paper</a></td>
+            <td style="padding-left: 0px"><a href="#rebuttal">Rebuttal Results</a></td>
         </tr>
         <tr>
-            <td><a href="#fig_compare" >Comparisons Presented in the Paper</a></td>
+            <td style="padding-left: 20px"><a href="#fast_sampling">Fast (8 Steps) Sampling with T2V-Turbo-V2</a></td>
         </tr>
         <tr>
-            <td><a href="#fig_compare_more" >Additional Comparisons with Motion Inversion</a></td>
+            <td style="padding-left: 20px"><a href="#stronger_models">Recent Stronger Models</a></td>
         </tr>
         <tr>
-            <td><a href="#fig_more_qual" >More Qualitative Results</a></td>
+            <td style="padding-left: 40px"><a href="#ltx">LTX-Video (HaCohen et al., 2024)</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 40px"><a href="#wan">WAN 2.1 (Wang, 2025)</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 20px"><a href="#camcoder">More Realistic Tone, Using "camcoder" Prompt Prefix</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 20px"><a href="#cartoonish_vanilla">Cartoonish Style is Prompt-Dependent, Not Injection-Related</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 20px"><a href="#increased_q_range">Increased Q-injection Steps</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 0px"><a href="#fig_qual">Main Results</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 20px"><a href="#fig_qual">Qualitative Results</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 20px"><a href="#fig_compare">Comparisons</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 20px"><a href="#fig_compare_more">Additional Comparisons</a></td>
+        </tr>
+        <tr>
+            <td style="padding-left: 20px"><a href="#fig_more_qual">More Results</a></td>
         </tr>
     </table>
     
     <table width="1200" align="center">
         <tbody>
-            <tr><th colspan="4" class="section-title"><h1 id="fig_qual" align="left"><a name="fig_qual"></a>Qualitative Results</h1>
+            <tr><th colspan="4" class="section-h1"><h1 id="rebuttal" align="left"><a name="rebuttal"></a>Rebuttal Results</h1>
+</th></tr>
+            <tr><th colspan="4" class="section-h2"><h2 id="fast_sampling" align="left"><a name="fast_sampling"></a>Fast (8 Steps) Sampling with T2V-Turbo-V2</h2>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source (young Appenzeller Sennenhund)</th>
+                <th style="font-family: Chalkduster">A dog running on top of a cloud</th>
+                <th style="font-family: Chalkduster">A pig running on top of a cloud</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fast_sampling/source_young_appenzeller_sennenhund.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fast_sampling/a_dog_running_on_top_of_a_cloud.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/fast_sampling/a_pig_running_on_top_of_a_cloud.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-h2"><h2 id="stronger_models" align="left"><a name="stronger_models"></a>Recent Stronger Models</h2>
+</th></tr>
+            <tr><th colspan="4" class="section-h3"><h3 id="ltx" align="left"><a name="ltx"></a>LTX-Video (HaCohen et al., 2024)</h3>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source (Golden retriever)</th>
+                <th style="font-family: Chalkduster">A dog trotting across a muddy farm</th>
+                <th style="font-family: Chalkduster">A pig trotting across a muddy farm</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/ltx/source_golden_retriever.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/ltx/a_dog_trotting_across_a_muddy_farm.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/ltx/a_pig_trotting_across_a_muddy_farm.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-h3"><h3 id="wan" align="left"><a name="wan"></a>WAN 2.1 (Wang, 2025)</h3>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source (dog with white dots)</th>
+                <th style="font-family: Chalkduster">A dog walking on the snow</th>
+                <th style="font-family: Chalkduster">A pig walking on the snow</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/wan/source_dog_with_white_dots.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/wan/a_dog_walking_on_the_snow.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/wan/a_pig_walking_on_the_snow.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-h2"><h2 id="camcoder" align="left"><a name="camcoder"></a>More Realistic Tone, Using "camcoder" Prompt Prefix</h2>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">In main results</th>
+                <th style="font-family: Arial;">With "camcoder" prefix</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcoder/source.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcoder/in_main_results.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">Two monkeys playing with coconuts</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcoder/with_camcoder_prefix.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">In main results</th>
+                <th style="font-family: Arial;">With "camcoder" prefix</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcoder/source_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcoder/in_main_results_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A goose walking in a puddle</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcoder/with_camcoder_prefix_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">In main results</th>
+                <th style="font-family: Arial;">With "camcoder" prefix</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcoder/source_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcoder/in_main_results_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A motorbike driving in a forest</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/camcoder/with_camcoder_prefix_2.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-h2"><h2 id="cartoonish_vanilla" align="left"><a name="cartoonish_vanilla"></a>Cartoonish Style is Prompt-Dependent, Not Injection-Related</h2>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">No injection: base model generates cartoonish results</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/cartoonish_vanilla/source.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/cartoonish_vanilla/ours.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A fox sitting in a snowy mountain</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/cartoonish_vanilla/no_injection_base_model_generates_cartoonish_results.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">Ours</th>
+                <th style="font-family: Arial;">No injection: base model generates cartoonish results</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/cartoonish_vanilla/source_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/cartoonish_vanilla/ours_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">Forest captured with a tilt up.</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/cartoonish_vanilla/no_injection_base_model_generates_cartoonish_results_1.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-h2"><h2 id="increased_q_range" align="left"><a name="increased_q_range"></a>Increased Q-injection Steps</h2>
+</th></tr>
+            <tr>
+                <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
+                <th style="font-family: Arial;">40% steps</th>
+                <th style="font-family: Arial;">50% steps</th>
+                <th style="font-family: Arial;">60% steps</th>
+            </tr>
+            <tr>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/increased_q_range/source.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/increased_q_range/40_steps.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px"><span style="font-family: Chalkduster">A fish swimming in the lake</span></div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/increased_q_range/50_steps.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+                <th style="vertical-align: top">
+                    <div style="display: flex; flex-direction: column; align-items: center">
+                        <video width="384" src="results_motion/increased_q_range/60_steps.mp4" 
+                               autoplay loop controls muted></video>
+                        <div style="margin-top: 8px; min-height: 20px">&nbsp;</div>
+                    </div>
+                </th>
+            </tr>
+            <tr></tr>
+            <tr><th colspan="4" class="section-h1"><h1 id="fig_qual" align="left"><a name="fig_qual"></a>Main Results</h1>
+</th></tr>
+            <tr><th colspan="4" class="section-h2"><h2 id="fig_qual" align="left"><a name="fig_qual"></a>Qualitative Results</h2>
 </th></tr>
             <tr>
                 <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
@@ -147,7 +494,7 @@
                 </th>
             </tr>
             <tr></tr>
-            <tr><th colspan="4" class="section-title"><h1 id="fig_compare" align="left"><a name="fig_compare"></a>Comparisons</h1>
+            <tr><th colspan="4" class="section-h2"><h2 id="fig_compare" align="left"><a name="fig_compare"></a>Comparisons</h2>
 </th></tr>
             <tr>
                 <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
@@ -297,7 +644,7 @@
                 </th>
             </tr>
             <tr></tr>
-            <tr><th colspan="4" class="section-title"><h1 id="fig_compare_more" align="left"><a name="fig_compare_more"></a>Additional Comparisons</h1>
+            <tr><th colspan="4" class="section-h2"><h2 id="fig_compare_more" align="left"><a name="fig_compare_more"></a>Additional Comparisons</h2>
 </th></tr>
             <tr>
                 <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
@@ -473,7 +820,7 @@
                 </th>
             </tr>
             <tr></tr>
-            <tr><th colspan="4" class="section-title"><h1 id="fig_more_qual" align="left"><a name="fig_more_qual"></a>More Results</h1>
+            <tr><th colspan="4" class="section-h2"><h2 id="fig_more_qual" align="left"><a name="fig_more_qual"></a>More Results</h2>
 </th></tr>
             <tr>
                 <th style="font-family: 'Segoe Print', sans-serif;">Source</th>
